@@ -23,7 +23,7 @@ const LiveChat = () => {
     }, 2000);
 
     return () => clearInterval(i);
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
@@ -45,7 +45,7 @@ const LiveChat = () => {
 
           dispatch(
             addMessage({
-              name: "Akshay Saini",
+              name: "Adarsh Dwivedi",
               message: liveMessage,
             })
           );
