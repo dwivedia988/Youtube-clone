@@ -36,7 +36,7 @@ const WatchPage = () => {
   // const { channelTitle, title, thumbnails } = snippet;
 
   return (
-    <div className="flex flex-col mx-32">
+    <div className="flex flex-col mx-28">
       <div className="px-5 flex">
         <div className="">
           <iframe
