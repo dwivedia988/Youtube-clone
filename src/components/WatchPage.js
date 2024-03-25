@@ -17,7 +17,7 @@ const WatchPage = () => {
     getVideoDetail();
 
     dispatch(closeMenu());
-  });
+  }, []);
 
   const getVideoDetail = async () => {
     const data = await fetch(
@@ -27,6 +27,7 @@ const WatchPage = () => {
         GOGGLE_API_KEY
     );
     const json = await data.json();
+    console.log(json.items);
     setVideo(json.items);
 
     // console.log(video.items[0].snippet);
@@ -36,7 +37,7 @@ const WatchPage = () => {
   // const { channelTitle, title, thumbnails } = snippet;
 
   return (
-    <div className="flex flex-col mx-28">
+    <div className="flex flex-col ml-24">
       <div className="px-5 flex">
         <div className="">
           <iframe
